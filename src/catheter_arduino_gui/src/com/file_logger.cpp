@@ -1,0 +1,24 @@
+
+
+
+#define _CRTDBG_MAP_ALLOC
+#include <stdlib.h>
+#include <crtdbg.h>
+#ifdef _DEBUG
+#ifndef DBG_NEW
+#define DBG_NEW new ( _NORMAL_BLOCK , __FILE__ , __LINE__ )
+#define new DBG_NEW
+#endif
+#endif  // _DEBUG
+
+
+
+
+/*
+ * This file defines functions and methods which can be used for logging file input/output
+ * The purpose is meant to make log files of the catheter currents (for later analysis)
+ */
+
+
+ 
+
